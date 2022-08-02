@@ -1,0 +1,33 @@
+O que é Arquitetura Serverless
+
+Serveless é uma arquitetura que visa livrar os desenvolvedores de configurações de servidor e infraestrutura, fornecendo serviços que tem uma configuração prévia, automatizada e com muitos benefícios em projetos de médio/grande porte que precisam de alta disponibilidade, auto escalonamento de acordo com a demanda, mais fidelidade a CI/CD e de fácil manutenbilidade.
+
+O que é Function as a service (FaaS) ?
+
+É uma arquitetura derivada do Serveless. Como havia descrito acima, a Serveless disponibiliza alguns serviços que são derivações, um deles é o FaaS!
+Aqui temos funções que executam e gerenciam lógica do lado do servidor. Dentro de containers stateless, as funções são rapidamente iniciadas e tem uma curta duração, em que esse tempo será usado para fazer a cobrança do serviço usado.
+É algo interessante de se aplicar em contextos de execução simples do projeto, uma vez que o tempo de execução é o princpal fator do custo temos que ter consciência para saber usá-las de forma efeciente. 
+Como deriva da Serveless, temos de prontidão uma configuração prévia do servidor (container) e também da segurança da infraestrutura, nos deixando apenas com a resposabilidade de dizer o que aquela função irá fazer.
+Em FaaS, quando há grande demanda da função, o provedor automatiza o processo de replicar as funções de forma que atenda todas as solicitações.
+
+Quais são os benefícios de usar arquitetura Serverless ?
+
+- Temos mais agilidade para focar no desenvolvimento de fato do projeto uma vez que foi provido um ambiente de execução pronto!
+- Temos flexibilidade em questões de linguagem de programação.
+- Escalonamento gerenciado pela plaraforma
+
+O que é Cloud Computing (Computação em Nuvem) ? E quais são seu benefícios ?
+
+É uma maneira de criar e disponibilizar serviços comuns para serem usados pelos desenvolvedores, visando facilitar a configuração de servidores, infraestutura, plataforma e até a criação de softwares. 
+Seus benefícios são:
+
+- Podemos automatizar tarefas que poderiam nos gerar mais complexidade, custos e consumir tempo. Por exemplo, adicionar mais recursos no datacenter para suportar as compras de um site na black friday.
+- O corte de custos também é outro ponto interessante, já que não datacenters a ser geridos e nem precisamos nos preocupar com escalonamento horizontal/vertical.
+- Temos recursos do próprio provedor para fins de monitoramento e logging, algo que é muito essencial para um projeto médio/grande 
+
+Quais são as principais diferenças entre Arquitetura Monolítica, Microsserviços e Serverless ?
+
+Falando do principal, a arquitetura monolítica tem a complexidade de gerenciar servidores e infraestutura sem contar outros recursos que uma aplicação precisa: email, banco de dados...
+Em microsserviços podemos segregar cada função em um serviço, fatiando os dados em bancos específicos e criando uma aplicação mais flexível e escalável
+Serveless se aplica bem a microsserviços, podendo dar uma configuração prévia de servidor e infraestrutura. Também lidando com problemas da arquitetura de microsserviços como logging e monitoramento. 
+
